@@ -20,6 +20,13 @@ def plot(file, baseline, out):
 	ax.set_ylim(ymax=1.0)
 	ax.set_xlim(xmin=0)
 
+	'''
+	https://matplotlib.org/3.1.1/tutorials/intermediate/tight_layout_guide.html
+	'''
+	'''
+	Avoids cutting off the axes titles
+	'''
+	plt.tight_layout()
 
 	if out:
 	    plt.savefig(out)
