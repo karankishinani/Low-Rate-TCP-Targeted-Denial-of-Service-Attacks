@@ -31,7 +31,7 @@ for cong in reno cubic westwood vegas; do
 		done
 	done
 
-	./findThroughputs.sh
+	python collect_throughputs.py
 	python cleanData.py --cong $cong
 done
 
