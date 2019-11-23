@@ -179,3 +179,7 @@ def topology():
     Popen("pgrep -f ping | xargs kill -9", shell=True).wait()
     Popen("pgrep -f iperf | xargs kill -9", shell=True).wait()
     Popen("pgrep -f webserver.py | xargs kill -9", shell=True).wait()
+
+
+if __name__ == '__main__':
+    topology()
