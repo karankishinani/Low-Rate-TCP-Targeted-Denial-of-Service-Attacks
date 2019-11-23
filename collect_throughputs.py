@@ -6,8 +6,7 @@ from os import path
 OUTPUT_DIR = 'outputs'
 
 def collect_throughputs(filepath):
-	str = 'data-q4-p0.75-i1/iperf_out.txt'
-	matchfile = re.search('data-q([0-9]+)-p([0-9\.]+)', str)
+	matchfile = re.search('data-q([0-9]+)-p([0-9\.]+)', filepath)
 	qsize = int(matchfile.group(1))
 	period = float(matchfile.group(2))
 
@@ -16,7 +15,7 @@ def collect_throughputs(filepath):
 		lines = input_f.readlines()
 
 		if len(lines) == 0:
-			print("Error: {} is empty".format(filepath))
+			print("[Error] file {}: {} is empty".format(filepath, filepath))
 			return
 
 		# Last line of the output contains the average throughput over the whole time period.
@@ -28,7 +27,7 @@ def collect_throughputs(filepath):
 		last_line = lines[-1]
 		matchoutput = re.search('(?<=Bytes)[0-9\.\ ]+', last_line)
 		if ' 0.0' not in last_line or matchoutput is None:
-			print("Error: last line does not seem to match average throughput format")
+			print("[Error] file {}: last line does not seem to match average throughput format".format(filepath))
 			return
 
 		if 'Mbits' in last_line:
@@ -42,7 +41,7 @@ def collect_throughputs(filepath):
 	# Appending throughput into a file for the same qsize. Period and throughput(Mbits/sec) delimited by space
 	output_filepath = path.join(OUTPUT_DIR, 'outq{}.txt'.format(qsize))
 	with open(output_filepath, 'a+') as output_f:
-		output_f.write('{} {}'.format(period, throughput))
+		output_f.write('{} {}\n'.format(period, throughput))
 
 
 if __name__ == '__main__':
