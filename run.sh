@@ -32,7 +32,7 @@ for cong in reno cubic westwood vegas; do
 	done
 
 	python collect_throughputs.py
-	python cleanData.py --cong $cong
+	python plot_graphs.py $cong
 done
 
 sudo python -m SimpleHTTPServer 80

@@ -59,7 +59,7 @@ def transpose(l):
     return zip(*l)
 
 def avg(lst):
-    return float(sum(lst)) / len(lst)
+    return sum(map(float, lst)) / len(lst)
 
 def stdev(lst):
     mean = avg(lst)
