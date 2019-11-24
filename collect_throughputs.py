@@ -36,7 +36,6 @@ def collect_throughputs(filepath):
 			throughput = float(matchoutput.group(0)) / 1024
 		elif 'bits' in last_line:
 			throughput = float(matchoutput.group(0)) / 1024 / 1024
-		print(throughput)
 
 	# Appending throughput into a file for the same qsize. Period and throughput(Mbits/sec) delimited by space
 	output_filepath = path.join(OUTPUT_DIR, 'outq{}.txt'.format(qsize))
