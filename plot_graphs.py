@@ -9,7 +9,7 @@ from helper import *
 
 
 def plot_graphs(algo):
-    path = 'output/*'
+    path = 'outputs/*'
     graphDir = "graphs"
     outDir = "cleanOutput"
     files = glob.glob(path)
