@@ -1,0 +1,56 @@
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 30.5 MByte (WARNING: requested 15.3 MByte)
+------------------------------------------------------------
+[ 18] local 10.0.0.3 port 5001 connected with 10.0.0.2 port 42426
+[ ID] Interval       Transfer     Bandwidth
+[ 18]  0.0-32.3 sec  1.46 MBytes   379 Kbits/sec
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 30.5 MByte (WARNING: requested 15.3 MByte)
+------------------------------------------------------------
+[ 18] local 10.0.0.3 port 5001 connected with 10.0.0.2 port 43268
+[ ID] Interval       Transfer     Bandwidth
+[ 18]  0.0-32.6 sec   942 KBytes   237 Kbits/sec
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 30.5 MByte (WARNING: requested 15.3 MByte)
+------------------------------------------------------------
+[ 18] local 10.0.0.3 port 5001 connected with 10.0.0.2 port 44110
+[ ID] Interval       Transfer     Bandwidth
+[ 18]  0.0-32.7 sec  1.35 MBytes   346 Kbits/sec
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 30.5 MByte (WARNING: requested 15.3 MByte)
+------------------------------------------------------------
+[ 18] local 10.0.0.3 port 5001 connected with 10.0.0.2 port 44936
+[ ID] Interval       Transfer     Bandwidth
+[ 18]  0.0-32.4 sec  1.10 MBytes   286 Kbits/sec
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 30.5 MByte (WARNING: requested 15.3 MByte)
+------------------------------------------------------------
+[ 18] local 10.0.0.3 port 5001 connected with 10.0.0.2 port 46048
+[ ID] Interval       Transfer     Bandwidth
+[ 18]  0.0-29.9 sec  1.41 MBytes   397 Kbits/sec
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 30.5 MByte (WARNING: requested 15.3 MByte)
+------------------------------------------------------------
+[ 18] local 10.0.0.3 port 5001 connected with 10.0.0.2 port 46882
+[ ID] Interval       Transfer     Bandwidth
+[ 18]  0.0-32.8 sec  1.34 MBytes   341 Kbits/sec
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 30.5 MByte (WARNING: requested 15.3 MByte)
+------------------------------------------------------------
+[ 18] local 10.0.0.3 port 5001 connected with 10.0.0.2 port 47724
+[ ID] Interval       Transfer     Bandwidth
+[ 18]  0.0-32.3 sec   932 KBytes   237 Kbits/sec
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 30.5 MByte (WARNING: requested 15.3 MByte)
+------------------------------------------------------------
+[ 18] local 10.0.0.3 port 5001 connected with 10.0.0.2 port 48558
+[ ID] Interval       Transfer     Bandwidth
+[ 18]  0.0-32.3 sec  1.12 MBytes   291 Kbits/sec
